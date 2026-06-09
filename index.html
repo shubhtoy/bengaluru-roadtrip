@@ -86,7 +86,6 @@ body{font-family:var(--font);color:var(--body);line-height:1.7;background:var(--
 }
 .day-top-img img{width:100%;height:100%;object-fit:cover;display:block;min-height:280px;transition:transform .4s}
 .day:hover .day-top-img img{transform:scale(1.03)}
-@media(max-width:700px){.day-top-img{flex:none;height:220px}}
 .day-top-info{
   flex:1;padding:28px 28px 20px;display:flex;flex-direction:column;justify-content:center;
 }
@@ -108,7 +107,6 @@ body{font-family:var(--font);color:var(--body);line-height:1.7;background:var(--
 .photos.g4{grid-template-columns:repeat(4,1fr)}
 .photos.g3{grid-template-columns:repeat(3,1fr)}
 .photos.g2{grid-template-columns:repeat(2,1fr)}
-@media(max-width:640px){.photos.g4,.photos.g3{grid-template-columns:repeat(2,1fr)}}
 .photos figure{margin:0;position:relative;overflow:hidden}
 .photos img{width:100%;height:170px;object-fit:cover;display:block;transition:transform .35s}
 .photos figure:hover img{transform:scale(1.05)}
@@ -120,7 +118,6 @@ body{font-family:var(--font);color:var(--body);line-height:1.7;background:var(--
 
 /* ===== 2-COL CONTENT ===== */
 .cols{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;margin-top:18px}
-@media(max-width:640px){.cols{grid-template-columns:1fr}}
 .cols ul{padding-left:17px;margin:6px 0}
 .cols li{margin:5px 0;font-size:.9rem}
 .cols .lbl{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:var(--accent2);margin-bottom:6px;display:block}
@@ -140,7 +137,6 @@ body{font-family:var(--font);color:var(--body);line-height:1.7;background:var(--
 
 /* ===== COST & TIPS ===== */
 .cost-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0}
-@media(max-width:560px){.cost-cards{grid-template-columns:1fr}}
 .cc{border-radius:var(--r-sm);padding:22px 16px;text-align:center;border:2px solid var(--line);background:var(--card)}
 .cc.feat{border-color:var(--accent);background:var(--green-bg)}
 .cc .tier{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:4px}
@@ -148,7 +144,6 @@ body{font-family:var(--font);color:var(--body);line-height:1.7;background:var(--
 .cc .amt{font-family:var(--serif);font-size:1.6rem;color:var(--ink)}
 .cc .desc{font-size:.76rem;color:var(--muted);margin-top:4px}
 .tips-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
-@media(max-width:580px){.tips-grid{grid-template-columns:1fr}}
 .tip-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-sm);padding:18px}
 .tip-card h4{font-size:.88rem;font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:6px}
 .tip-card ul{padding-left:15px;font-size:.84rem}
@@ -167,6 +162,63 @@ body{font-family:var(--font);color:var(--body);line-height:1.7;background:var(--
 footer{text-align:center;color:var(--subtle);font-size:.76rem;margin-top:48px;padding:24px;border-top:1px solid var(--line)}
 a{color:var(--accent2);text-decoration:none}
 a:hover{text-decoration:underline}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media(max-width:768px){
+  .hero{padding:56px 16px 48px;min-height:auto}
+  .hero h1{font-size:1.8rem}
+  .hero .sub{font-size:.92rem}
+  .hero-route{font-size:.82rem;padding:12px 16px;gap:4px}
+  .hero-route .nights{display:block}
+  .stats-bar{gap:8px}
+  .stats-bar .s{padding:10px 14px;min-width:90px}
+  .stats-bar .s strong{font-size:1rem}
+  .wrap{padding:0 14px 60px}
+  .sec-head{margin:40px 0 18px}
+  .sec-head h2{font-size:1.5rem}
+  .day-top{flex-direction:column}
+  .day-top-img{flex:none;height:200px}
+  .day-top-info{padding:20px 18px 16px}
+  .day-top-info h3{font-size:1.25rem}
+  .day-body{padding:18px}
+  .pill-row{gap:6px}
+  .pill{font-size:.74rem;padding:5px 10px}
+  .photos.g4{grid-template-columns:repeat(2,1fr)}
+  .photos.g3{grid-template-columns:repeat(2,1fr)}
+  .photos img{height:140px}
+  .cols{grid-template-columns:1fr;gap:18px}
+  .tbl{font-size:.78rem}
+  .tbl th,.tbl td{padding:8px 10px}
+  .cost-cards{grid-template-columns:1fr}
+  .tips-grid{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .hero{padding:44px 14px 40px}
+  .hero h1{font-size:1.5rem}
+  .hero .sub{font-size:.85rem}
+  .hero-route{flex-direction:column;gap:2px;font-size:.78rem;padding:10px 14px}
+  .hero-route .arrow{display:none}
+  .stats-bar{flex-direction:column;align-items:center;gap:6px}
+  .stats-bar .s{width:100%;max-width:200px}
+  .day-top-img{height:170px}
+  .day-top-info{padding:16px 14px 12px}
+  .day-top-info h3{font-size:1.1rem}
+  .day-body{padding:14px}
+  .photos.g4,.photos.g3,.photos.g2{grid-template-columns:1fr}
+  .photos img{height:180px}
+  .cols ul{padding-left:14px}
+  .cols li{font-size:.84rem}
+  .budget{padding:14px}
+  .note{padding:12px 14px;font-size:.84rem}
+  .overview-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px -14px;padding:0 14px}
+  .tbl{min-width:560px}
+  .cc .amt{font-size:1.3rem}
+}
+@media(max-width:360px){
+  .hero h1{font-size:1.3rem}
+  .day-top-img{height:150px}
+  .photos img{height:150px}
+}
 
 @media print{
   body{background:#fff}
@@ -209,6 +261,7 @@ a:hover{text-decoration:underline}
 
 <!-- ===== ROUTE TABLE ===== -->
 <div class="sec-head"><h2>Route overview</h2><div class="bar"></div></div>
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch">
 <table class="tbl">
 <thead><tr><th>Day</th><th>Leg</th><th class="r">Distance</th><th class="r">Drive</th><th>Highlights</th></tr></thead>
 <tbody>
@@ -221,6 +274,7 @@ a:hover{text-decoration:underline}
 <tr><td><b>7</b></td><td>Gokarna → Bengaluru</td><td class="r">~485 km</td><td class="r">9–10 h</td><td>NH48, arrive evening</td></tr>
 </tbody>
 </table>
+</div>
 
 <div class="note info">
   <div class="t">ℹ️ On the long days (5 & 7)</div>
@@ -601,6 +655,7 @@ a:hover{text-decoration:underline}
 
 <!-- ═══════════════════════ COSTS ═══════════════════════ -->
 <div class="sec-head"><h2>Total cost — 2 people</h2><div class="bar"></div></div>
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch">
 <table class="tbl">
 <thead><tr><th>Item</th><th class="r">Cost (₹)</th><th>Notes</th></tr></thead>
 <tbody>
@@ -612,6 +667,7 @@ a:hover{text-decoration:underline}
 <tr><td>Miscellaneous</td><td class="r">₹2,000</td><td>Parking, shopping, tips</td></tr>
 </tbody>
 </table>
+</div>
 
 <div class="cost-cards">
   <div class="cc"><div class="tier">Budget</div><div class="amt">₹50,000</div><div class="desc">Basic stays, self-cook/roadside</div></div>
