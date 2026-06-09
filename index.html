@@ -3,843 +3,601 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>7-Day Road Trip: Bengaluru → Coorg → Ooty → Gokarna</title>
-<meta name="description" content="The best 7-day self-drive road trip from Bengaluru through Coorg, Ooty/Coonoor & Gokarna — complete itinerary with costs & tips.">
+<title>7-Day Self-Drive: Bengaluru → Coorg → Ooty → Gokarna</title>
+<meta name="description" content="A well-researched 7-day self-drive road trip itinerary from Bengaluru through Coorg, Ooty/Coonoor & Gokarna with costs, photos and practical tips.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --f-body:'Inter',system-ui,sans-serif;
-  --f-display:'Playfair Display',Georgia,serif;
-  --ink:#0f172a;--body:#374151;--muted:#6b7280;--subtle:#9ca3af;
-  --bg:#f8fafc;--surface:#ffffff;--border:#e2e8f0;--border-light:#f1f5f9;
-  --accent:#0d9488;--accent-dark:#0f766e;--accent-deep:#134e4a;--accent-light:#ccfbf1;
-  --warm:#dc2626;--warm-bg:#fef2f2;--warm-border:#fecaca;
-  --amber:#d97706;--amber-bg:#fffbeb;--amber-border:#fde68a;
-  --blue:#2563eb;--blue-bg:#eff6ff;--blue-border:#bfdbfe;
-  --green:#059669;--green-bg:#ecfdf5;--green-border:#a7f3d0;
+  --ff:'Inter',system-ui,sans-serif;
+  --fd:'Playfair Display',Georgia,serif;
+  --c-ink:#0f172a;--c-body:#374151;--c-muted:#6b7280;--c-subtle:#9ca3af;
+  --c-bg:#f9fafb;--c-surface:#ffffff;--c-border:#e5e7eb;--c-border-light:#f3f4f6;
+  --c-accent:#0d9488;--c-accent-dk:#0f766e;--c-accent-deep:#134e4a;--c-accent-lt:#ccfbf1;
+  --c-amber:#d97706;--c-amber-bg:#fffbeb;--c-amber-bdr:#fde68a;
+  --c-blue:#2563eb;--c-blue-bg:#eff6ff;--c-blue-bdr:#bfdbfe;
+  --c-green:#059669;--c-green-bg:#ecfdf5;--c-green-bdr:#a7f3d0;
   --r:16px;--r-sm:10px;--r-lg:24px;
-  --shadow-sm:0 1px 2px rgba(0,0,0,.05);
-  --shadow:0 4px 6px -1px rgba(0,0,0,.05),0 2px 4px -2px rgba(0,0,0,.05);
-  --shadow-lg:0 10px 25px -3px rgba(0,0,0,.07),0 4px 10px -4px rgba(0,0,0,.04);
+  --sh:0 1px 3px rgba(0,0,0,.06),0 4px 12px rgba(0,0,0,.04);
+  --sh-lg:0 8px 30px rgba(0,0,0,.08);
 }
-body{font-family:var(--f-body);color:var(--body);line-height:1.7;background:var(--bg);-webkit-font-smoothing:antialiased}
+body{font-family:var(--ff);color:var(--c-body);line-height:1.7;background:var(--c-bg);-webkit-font-smoothing:antialiased}
 
-/* ════════════════════════════════════════════════════════
-   HERO
-   ════════════════════════════════════════════════════════ */
+/* ═══ HERO ═══ */
 .hero{
-  position:relative;overflow:hidden;
-  background:linear-gradient(160deg,#042f2e 0%,#0f766e 40%,#0d9488 70%,#14b8a6 100%);
-  color:#fff;padding:100px 24px 80px;text-align:center;
+  background:linear-gradient(165deg,#042f2e 0%,#0f766e 45%,#14b8a6 100%);
+  color:#fff;padding:88px 24px 72px;text-align:center;position:relative;overflow:hidden;
 }
 .hero::before{
-  content:'';position:absolute;top:0;left:0;right:0;bottom:0;
-  background:
-    radial-gradient(ellipse at 20% 50%,rgba(255,255,255,.06) 0%,transparent 50%),
-    radial-gradient(ellipse at 80% 20%,rgba(255,255,255,.04) 0%,transparent 40%);
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at 30% 20%,rgba(255,255,255,.07),transparent 60%),
+             radial-gradient(ellipse at 70% 80%,rgba(255,255,255,.05),transparent 50%);
 }
 .hero::after{
-  content:'';position:absolute;bottom:-2px;left:0;right:0;height:80px;
-  background:linear-gradient(to top,var(--bg),transparent);
+  content:'';position:absolute;bottom:0;left:0;right:0;height:60px;
+  background:linear-gradient(to top,var(--c-bg),transparent);
 }
-.hero>*{position:relative;z-index:1}
-.hero-label{
-  display:inline-flex;align-items:center;gap:8px;
-  font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;
-  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
-  border-radius:999px;padding:8px 20px;margin-bottom:24px;
-  backdrop-filter:blur(4px);
+.hero *{position:relative;z-index:1}
+.hero-tag{
+  display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:1.8px;
+  text-transform:uppercase;background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:7px 18px;margin-bottom:20px;
 }
 .hero h1{
-  font-family:var(--f-display);font-size:clamp(2.2rem,5.5vw,3.6rem);
-  font-weight:900;line-height:1.1;margin:0 auto 18px;max-width:750px;
-  letter-spacing:-.02em;
+  font-family:var(--fd);font-size:clamp(2rem,5vw,3.4rem);font-weight:900;
+  line-height:1.12;max-width:720px;margin:0 auto 16px;
 }
-.hero .lead{
-  font-size:clamp(.95rem,2vw,1.12rem);opacity:.88;max-width:620px;
-  margin:0 auto 32px;line-height:1.75;
+.hero .lead{font-size:clamp(.9rem,1.8vw,1.08rem);opacity:.87;max-width:580px;margin:0 auto 30px;line-height:1.7}
+.hero-route{
+  display:inline-flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:6px 10px;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.1);
+  border-radius:var(--r);padding:14px 24px;font-weight:600;font-size:.92rem;
+  backdrop-filter:blur(10px);
 }
-.route-badge{
-  display:inline-flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 12px;
-  background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.12);
-  border-radius:var(--r);padding:16px 28px;font-size:.95rem;font-weight:600;
-  backdrop-filter:blur(12px);
+.hero-route .a{opacity:.4}
+.hero-route .n{font-size:.65rem;font-weight:400;opacity:.6;vertical-align:super}
+.hero-chips{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:12px;
+  max-width:560px;margin:28px auto 0;
 }
-.route-badge .sep{opacity:.4;font-weight:400}
-.route-badge .n{font-size:.68rem;opacity:.65;font-weight:400;margin-left:2px}
-.hero-stats{
-  display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:32px;
+.hero-chips .hc{
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.13);
+  border-radius:var(--r-sm);padding:14px 10px;text-align:center;
 }
-.hero-stats .chip{
-  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);
-  border-radius:var(--r-sm);padding:14px 22px;min-width:120px;text-align:center;
-  backdrop-filter:blur(8px);
-}
-.hero-stats .chip strong{display:block;font-size:1.3rem;font-weight:800;letter-spacing:-.01em}
-.hero-stats .chip span{font-size:.68rem;text-transform:uppercase;letter-spacing:.8px;opacity:.7;margin-top:2px;display:block}
+.hero-chips .hc strong{display:block;font-size:1.15rem;font-weight:800}
+.hero-chips .hc span{display:block;font-size:.62rem;text-transform:uppercase;letter-spacing:.7px;opacity:.7;margin-top:3px}
 
-/* ════════════════════════════════════════════════════════
-   LAYOUT
-   ════════════════════════════════════════════════════════ */
-.container{max-width:960px;margin:0 auto;padding:0 20px}
-.section{padding:60px 0}
-.section+.section{border-top:1px solid var(--border)}
-.section-header{margin-bottom:32px}
-.section-header h2{font-family:var(--f-display);font-size:2rem;color:var(--ink);font-weight:800;margin-bottom:4px}
-.section-header .accent-bar{width:40px;height:4px;background:var(--accent);border-radius:2px;margin-top:10px}
-.section-header p{color:var(--muted);margin-top:10px;max-width:600px}
+/* ═══ LAYOUT ═══ */
+.ctn{max-width:940px;margin:0 auto;padding:0 20px}
+.sec{padding:56px 0}
+.sec+.sec{border-top:1px solid var(--c-border)}
+.sec-hd h2{font-family:var(--fd);font-size:1.85rem;color:var(--c-ink);font-weight:800}
+.sec-hd .bar{width:36px;height:4px;background:var(--c-accent);border-radius:2px;margin:10px 0 16px}
+.sec-hd p{color:var(--c-muted);max-width:600px;font-size:.95rem}
 
-/* ════════════════════════════════════════════════════════
-   OVERVIEW TABLE
-   ════════════════════════════════════════════════════════ */
-.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:var(--r);border:1px solid var(--border);background:var(--surface)}
-.table-wrap table{width:100%;min-width:600px;border-collapse:collapse}
-.table-wrap th{background:var(--accent-deep);color:#fff;padding:13px 16px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;text-align:left}
-.table-wrap th.r{text-align:right}
-.table-wrap td{padding:12px 16px;border-bottom:1px solid var(--border-light);font-size:.9rem}
-.table-wrap td.r{text-align:right;font-weight:600;color:var(--ink)}
-.table-wrap tr:last-child td{border-bottom:none}
-.table-wrap tr:hover td{background:#f8fffe}
+/* ═══ TABLE ═══ */
+.tw{overflow-x:auto;border-radius:var(--r);border:1px solid var(--c-border);background:var(--c-surface);margin-top:20px}
+.tw table{width:100%;min-width:620px;border-collapse:collapse}
+.tw th{background:var(--c-accent-deep);color:#fff;padding:12px 16px;font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;text-align:left}
+.tw th.r{text-align:right}
+.tw td{padding:11px 16px;border-bottom:1px solid var(--c-border-light);font-size:.88rem}
+.tw td.r{text-align:right;font-weight:600;color:var(--c-ink)}
+.tw tr:last-child td{border-bottom:none}
+.tw tr:hover td{background:#f0fdfa}
 
-/* ════════════════════════════════════════════════════════
-   DAY CARDS
-   ════════════════════════════════════════════════════════ */
-.day-card{
-  background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);
-  overflow:hidden;margin-bottom:32px;box-shadow:var(--shadow-sm);
-  transition:box-shadow .3s,transform .3s;
-}
-.day-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px)}
-.day-hero{position:relative;height:360px;overflow:hidden}
-.day-hero img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.day-card:hover .day-hero img{transform:scale(1.03)}
-.day-hero-overlay{
-  position:absolute;bottom:0;left:0;right:0;padding:32px 28px 24px;
-  background:linear-gradient(to top,rgba(0,0,0,.8) 0%,rgba(0,0,0,.3) 60%,transparent 100%);
+/* ═══ DAY CARD ═══ */
+.day{background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-lg);overflow:hidden;margin-bottom:36px;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
+.day:hover{transform:translateY(-3px);box-shadow:var(--sh-lg)}
+.day-img{position:relative;height:340px;overflow:hidden}
+.day-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.day:hover .day-img img{transform:scale(1.03)}
+.day-img .overlay{
+  position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;
+  padding:28px;background:linear-gradient(to top,rgba(0,0,0,.8),rgba(0,0,0,.2) 55%,transparent);
   color:#fff;
 }
-.day-hero-overlay .day-num{
+.day-img .dn{
   display:inline-flex;align-items:center;justify-content:center;
-  width:36px;height:36px;border-radius:50%;background:var(--accent);
-  font-size:.82rem;font-weight:800;margin-bottom:8px;
+  width:34px;height:34px;border-radius:50%;background:var(--c-accent);
+  font-size:.78rem;font-weight:800;margin-bottom:8px;
 }
-.day-hero-overlay h3{font-family:var(--f-display);font-size:1.6rem;font-weight:800;margin-bottom:4px}
-.day-hero-overlay .sub{font-size:.9rem;opacity:.85}
+.day-img .overlay h3{font-family:var(--fd);font-size:1.5rem;font-weight:800}
+.day-img .overlay p{font-size:.88rem;opacity:.82;margin-top:4px}
+.day-bd{padding:28px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.pill{background:var(--c-border-light);border-radius:999px;padding:6px 13px;font-size:.78rem;font-weight:500;color:var(--c-ink)}
+.pill.warn{background:#fef3c7;color:#92400e}
 
-.day-content{padding:28px}
-.pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
-.pill{background:var(--border-light);border-radius:999px;padding:6px 14px;font-size:.8rem;font-weight:500;color:var(--ink)}
-
-.two-col{display:grid;grid-template-columns:1.4fr 1fr;gap:28px}
-.two-col .label{display:block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--accent-dark);margin-bottom:8px}
-.two-col ul{padding-left:18px;margin-bottom:16px}
-.two-col li{margin:6px 0;font-size:.9rem;line-height:1.6}
-
-/* ════════════════════════════════════════════════════════
-   PHOTO GRIDS
-   ════════════════════════════════════════════════════════ */
-.photo-grid{display:grid;gap:8px;margin:20px 0;border-radius:var(--r-sm);overflow:hidden}
-.photo-grid.g4{grid-template-columns:repeat(4,1fr)}
-.photo-grid.g3{grid-template-columns:repeat(3,1fr)}
-.photo-grid.g2{grid-template-columns:repeat(2,1fr)}
-.photo-grid figure{margin:0;position:relative;overflow:hidden;border-radius:var(--r-sm)}
-.photo-grid img{width:100%;height:170px;object-fit:cover;display:block;transition:transform .4s}
-.photo-grid figure:hover img{transform:scale(1.06)}
-.photo-grid figcaption{
-  position:absolute;bottom:0;left:0;right:0;padding:24px 10px 8px;
-  background:linear-gradient(transparent,rgba(0,0,0,.75));
-  color:#fff;font-size:.7rem;font-weight:500;
+/* ═══ PHOTO GRID ═══ */
+.pg{display:grid;gap:6px;margin:18px 0;border-radius:var(--r-sm);overflow:hidden}
+.pg.g4{grid-template-columns:repeat(4,1fr)}
+.pg.g3{grid-template-columns:repeat(3,1fr)}
+.pg figure{margin:0;position:relative;overflow:hidden;border-radius:6px}
+.pg img{width:100%;height:160px;object-fit:cover;display:block;transition:transform .35s}
+.pg figure:hover img{transform:scale(1.05)}
+.pg figcaption{
+  position:absolute;bottom:0;left:0;right:0;padding:20px 8px 6px;
+  background:linear-gradient(transparent,rgba(0,0,0,.7));
+  color:#fff;font-size:.66rem;font-weight:500;
 }
 
-/* ════════════════════════════════════════════════════════
-   BUDGET BOX
-   ════════════════════════════════════════════════════════ */
-.budget-box{background:var(--border-light);border-radius:var(--r-sm);padding:18px 20px}
-.budget-box .label{margin-bottom:10px}
-.budget-box .row{display:flex;justify-content:space-between;font-size:.88rem;padding:4px 0;color:var(--body)}
-.budget-box .row span:last-child{font-weight:600;color:var(--ink)}
-.budget-box .total{
-  display:flex;justify-content:space-between;
-  border-top:2px solid var(--accent);margin-top:12px;padding-top:12px;
-  font-weight:800;font-size:1.05rem;color:var(--accent-deep);
-}
+/* ═══ TWO COL ═══ */
+.cols{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;margin-top:18px}
+.cols .lbl{display:block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--c-accent-dk);margin-bottom:8px}
+.cols ul{padding-left:17px}
+.cols li{margin:6px 0;font-size:.88rem;line-height:1.6}
 
-/* ════════════════════════════════════════════════════════
-   CALLOUTS
-   ════════════════════════════════════════════════════════ */
-.callout{border-radius:var(--r-sm);padding:16px 20px;margin:16px 0;font-size:.88rem;line-height:1.7}
-.callout .heading{font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:6px}
-.callout ul{margin:8px 0 0;padding-left:18px}
-.callout li{margin:4px 0}
-.callout.tip{background:var(--green-bg);border:1px solid var(--green-border);color:#064e3b}
-.callout.warn{background:var(--amber-bg);border:1px solid var(--amber-border);color:#78350f}
-.callout.info{background:var(--blue-bg);border:1px solid var(--blue-border);color:#1e3a5f}
-.callout.danger{background:var(--warm-bg);border:1px solid var(--warm-border);color:#7f1d1d}
+/* ═══ RESEARCH BOX ═══ */
+.research{background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r);padding:20px 22px;margin-top:18px}
+.research .lbl{margin-bottom:10px}
+.research table{width:100%;font-size:.84rem;border-collapse:collapse}
+.research td{padding:6px 0;border-bottom:1px solid var(--c-border-light);vertical-align:top}
+.research td:first-child{font-weight:600;color:var(--c-ink);width:35%;padding-right:12px}
+.research tr:last-child td{border-bottom:none}
 
-/* ════════════════════════════════════════════════════════
-   COST CARDS
-   ════════════════════════════════════════════════════════ */
-.cost-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}
-.cost-card{
-  border-radius:var(--r);padding:24px 20px;text-align:center;
-  border:2px solid var(--border);background:var(--surface);transition:border-color .2s;
-}
-.cost-card:hover{border-color:var(--accent)}
-.cost-card.featured{border-color:var(--accent);background:var(--accent-light)}
-.cost-card .tier{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--muted);margin-bottom:6px}
-.cost-card.featured .tier{color:var(--accent-dark)}
-.cost-card .price{font-family:var(--f-display);font-size:1.7rem;color:var(--ink);margin-bottom:4px}
-.cost-card .desc{font-size:.78rem;color:var(--muted)}
+/* ═══ BUDGET ═══ */
+.budget{background:var(--c-border-light);border-radius:var(--r-sm);padding:18px}
+.budget .row{display:flex;justify-content:space-between;font-size:.86rem;padding:4px 0}
+.budget .row span:last-child{font-weight:600;color:var(--c-ink)}
+.budget .tot{display:flex;justify-content:space-between;border-top:2px solid var(--c-accent);margin-top:10px;padding-top:10px;font-weight:800;color:var(--c-accent-deep);font-size:1rem}
 
-/* ════════════════════════════════════════════════════════
-   TIPS GRID
-   ════════════════════════════════════════════════════════ */
-.tips-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.tip-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:22px;transition:box-shadow .2s}
-.tip-box:hover{box-shadow:var(--shadow)}
-.tip-box h4{font-size:.9rem;font-weight:700;color:var(--ink);margin-bottom:10px;display:flex;align-items:center;gap:8px}
-.tip-box ul{padding-left:16px;font-size:.85rem}
-.tip-box li{margin:5px 0;line-height:1.5}
+/* ═══ CALLOUT ═══ */
+.co{border-radius:var(--r-sm);padding:14px 18px;margin:14px 0;font-size:.86rem;line-height:1.65}
+.co .h{font-weight:700;margin-bottom:3px}
+.co ul{margin:6px 0 0;padding-left:16px}
+.co li{margin:3px 0}
+.co.tip{background:var(--c-green-bg);border:1px solid var(--c-green-bdr);color:#064e3b}
+.co.warn{background:var(--c-amber-bg);border:1px solid var(--c-amber-bdr);color:#78350f}
+.co.info{background:var(--c-blue-bg);border:1px solid var(--c-blue-bdr);color:#1e3a5f}
 
-/* ════════════════════════════════════════════════════════
-   RECOMMENDED BOX
-   ════════════════════════════════════════════════════════ */
-.alt-route{
-  background:linear-gradient(135deg,var(--accent-light),#f0fdfa);
-  border:2px solid var(--accent);border-radius:var(--r-lg);padding:32px;
-}
-.alt-route h3{font-family:var(--f-display);font-size:1.4rem;color:var(--accent-deep);margin-bottom:12px}
-.alt-route .route-highlight{
-  text-align:center;font-size:1.05rem;font-weight:700;color:var(--accent-dark);
-  background:var(--surface);border-radius:var(--r-sm);padding:16px;margin:16px 0;
-  border:1px solid var(--green-border);
-}
+/* ═══ COST SECTION ═══ */
+.cost-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0}
+.cc{border-radius:var(--r);padding:22px;text-align:center;border:2px solid var(--c-border);background:var(--c-surface)}
+.cc.f{border-color:var(--c-accent);background:var(--c-accent-lt)}
+.cc .t{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--c-muted)}
+.cc.f .t{color:var(--c-accent-dk)}
+.cc .p{font-family:var(--fd);font-size:1.6rem;color:var(--c-ink);margin:4px 0}
+.cc .d{font-size:.76rem;color:var(--c-muted)}
 
-/* ════════════════════════════════════════════════════════
-   FOOTER
-   ════════════════════════════════════════════════════════ */
-footer{
-  background:var(--ink);color:rgba(255,255,255,.6);padding:40px 24px;
-  text-align:center;font-size:.8rem;line-height:1.8;
-}
-footer strong{color:rgba(255,255,255,.9)}
+/* ═══ TIPS ═══ */
+.tg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+.tb{background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r);padding:20px}
+.tb h4{font-size:.86rem;font-weight:700;color:var(--c-ink);margin-bottom:8px}
+.tb ul{padding-left:15px;font-size:.84rem}
+.tb li{margin:5px 0}
 
-/* ════════════════════════════════════════════════════════
-   RESPONSIVE
-   ════════════════════════════════════════════════════════ */
+/* ═══ ALT ROUTE ═══ */
+.alt{background:linear-gradient(135deg,var(--c-accent-lt),#f0fdfa);border:2px solid var(--c-accent);border-radius:var(--r-lg);padding:28px;margin-top:24px}
+.alt h3{font-family:var(--fd);font-size:1.3rem;color:var(--c-accent-deep);margin-bottom:10px}
+.alt .rb{text-align:center;font-weight:700;color:var(--c-accent-dk);background:var(--c-surface);border-radius:var(--r-sm);padding:14px;margin:14px 0;border:1px solid var(--c-green-bdr);font-size:1rem}
+
+/* ═══ FOOTER ═══ */
+footer{background:var(--c-ink);color:rgba(255,255,255,.6);padding:36px 24px;text-align:center;font-size:.78rem;line-height:1.8}
+footer strong{color:rgba(255,255,255,.85)}
+
+/* ═══ RESPONSIVE ═══ */
 @media(max-width:768px){
-  .hero{padding:72px 18px 60px}
-  .hero h1{font-size:2rem}
-  .hero .lead{font-size:.92rem}
-  .route-badge{font-size:.84rem;padding:12px 18px;gap:6px 10px}
-  .hero-stats{gap:10px}
-  .hero-stats .chip{padding:10px 16px;min-width:100px}
-  .hero-stats .chip strong{font-size:1.1rem}
-  .container{padding:0 16px}
-  .section{padding:40px 0}
-  .section-header h2{font-size:1.6rem}
-  .day-hero{height:260px}
-  .day-content{padding:20px}
-  .two-col{grid-template-columns:1fr}
-  .photo-grid.g4{grid-template-columns:repeat(2,1fr)}
-  .photo-grid.g3{grid-template-columns:repeat(2,1fr)}
+  .hero{padding:64px 18px 56px}
+  .hero-chips{grid-template-columns:repeat(2,1fr);max-width:320px}
+  .day-img{height:240px}
+  .day-bd{padding:20px}
+  .cols{grid-template-columns:1fr}
+  .pg.g4{grid-template-columns:repeat(2,1fr)}
+  .pg.g3{grid-template-columns:repeat(2,1fr)}
   .cost-grid{grid-template-columns:1fr}
-  .tips-grid{grid-template-columns:1fr}
+  .tg{grid-template-columns:1fr}
 }
 @media(max-width:480px){
-  .hero{padding:56px 14px 48px}
-  .hero h1{font-size:1.65rem}
-  .hero-label{font-size:.65rem;padding:6px 14px}
-  .route-badge{flex-direction:column;gap:4px;font-size:.8rem;padding:12px 16px}
-  .route-badge .sep{display:none}
-  .hero-stats{flex-direction:column;align-items:center}
-  .hero-stats .chip{width:100%;max-width:200px}
-  .day-hero{height:200px}
-  .day-hero-overlay{padding:20px 16px 16px}
-  .day-hero-overlay h3{font-size:1.25rem}
-  .day-content{padding:16px}
-  .pills{gap:6px}
+  .hero{padding:48px 14px 44px}
+  .hero h1{font-size:1.6rem}
+  .hero .lead{font-size:.86rem}
+  .hero-route{flex-direction:column;gap:4px;font-size:.8rem;padding:12px 16px}
+  .hero-route .a{display:none}
+  .hero-chips{grid-template-columns:1fr 1fr;max-width:260px;gap:8px}
+  .hero-chips .hc{padding:10px 8px}
+  .hero-chips .hc strong{font-size:1rem}
+  .day-img{height:200px}
+  .day-img .overlay{padding:18px}
+  .day-img .overlay h3{font-size:1.2rem}
+  .day-bd{padding:16px}
+  .pg.g4,.pg.g3{grid-template-columns:1fr 1fr}
+  .pg img{height:140px}
   .pill{font-size:.72rem;padding:5px 10px}
-  .photo-grid.g4,.photo-grid.g3,.photo-grid.g2{grid-template-columns:1fr}
-  .photo-grid img{height:200px}
-  .two-col ul{padding-left:14px}
-  .two-col li{font-size:.85rem}
-  .callout{padding:14px 16px;font-size:.84rem}
-  .budget-box{padding:14px 16px}
-  .alt-route{padding:22px 18px}
+  .cols li{font-size:.84rem}
+  .research td{display:block;width:100%!important;padding:3px 0}
+  .research td:first-child{border-bottom:none;padding-bottom:0}
+  .alt{padding:20px}
 }
-@media print{
-  body{background:#fff}
-  .hero{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  .day-card{break-inside:avoid;box-shadow:none;transform:none!important}
-}
+@media print{body{background:#fff}.hero{-webkit-print-color-adjust:exact;print-color-adjust:exact}.day{break-inside:avoid;box-shadow:none;transform:none!important}}
 </style>
 </head>
 <body>
 
-<!-- ═══════════════════ HERO ═══════════════════ -->
 <header class="hero">
-  <div class="hero-label">🚗 South India · Self-Drive · 7 Days</div>
+  <div class="hero-tag">🚗 South India · Self-Drive · 7 Days</div>
   <h1>The Perfect Week on the Road from Bengaluru</h1>
-  <p class="lead">Three two-night bases through coffee country, the Nilgiri mountains, and pristine Arabian Sea beaches. Less driving, more living.</p>
-  <div class="route-badge">
-    <span>Bengaluru</span><span class="sep">→</span>
-    <span>Coorg<span class="n">(2N)</span></span><span class="sep">→</span>
-    <span>Ooty / Coonoor<span class="n">(2N)</span></span><span class="sep">→</span>
-    <span>Gokarna<span class="n">(2N)</span></span><span class="sep">→</span>
+  <p class="lead">Three two-night bases through coffee country, Nilgiri mountains and Arabian Sea beaches. Less driving, more living.</p>
+  <div class="hero-route">
+    <span>Bengaluru</span><span class="a">→</span>
+    <span>Coorg<span class="n"> 2N</span></span><span class="a">→</span>
+    <span>Ooty / Coonoor<span class="n"> 2N</span></span><span class="a">→</span>
+    <span>Gokarna<span class="n"> 2N</span></span><span class="a">→</span>
     <span>Bengaluru</span>
   </div>
-  <div class="hero-stats">
-    <div class="chip"><strong>~1,350 km</strong><span>Total distance</span></div>
-    <div class="chip"><strong>7 days</strong><span>6 nights</span></div>
-    <div class="chip"><strong>₹50k–75k</strong><span>2 people</span></div>
-    <div class="chip"><strong>Oct – Mar</strong><span>Best season</span></div>
+  <div class="hero-chips">
+    <div class="hc"><strong>~1,350 km</strong><span>Total drive</span></div>
+    <div class="hc"><strong>7 days</strong><span>6 nights</span></div>
+    <div class="hc"><strong>₹50–75k</strong><span>2 people</span></div>
+    <div class="hc"><strong>Oct–Mar</strong><span>Best season</span></div>
   </div>
 </header>
 
-<!-- ═══════════════════ MAIN ═══════════════════ -->
 <main>
-
-<!-- INTRO -->
-<div class="section">
-  <div class="container">
-    <div class="section-header">
-      <h2>Why this route works</h2>
-      <div class="accent-bar"></div>
-      <p>Most 7-day itineraries from Bengaluru try to hit 5–6 places and end up with half the trip spent in the car. This version uses only 3 stops with 2 nights each — you unpack once and actually explore.</p>
-    </div>
-    <div class="callout tip">
-      <div class="heading">💡 The math that matters</div>
-      3 check-ins instead of 6 saves you ~6 hours of packing/checkout admin over the week. That's almost a full extra day of actual experiences.
-    </div>
-  </div>
-</div>
+<div class="sec"><div class="ctn">
+  <div class="sec-hd"><h2>Why this route?</h2><div class="bar"></div>
+  <p>Most 7-day Bengaluru trips cram 5–6 places and burn half the holiday driving. This version uses <strong>3 stops × 2 nights each</strong> — you unpack once per place and actually explore. Mysuru is a lunch-stop, not an overnight.</p></div>
+  <div class="co tip"><div class="h">💡 The simple math</div>3 check-ins vs 6 saves ~6 hours of packing/checkout admin. That's nearly an extra day of real experiences.</div>
+</div></div>
 
 <!-- ROUTE TABLE -->
-<div class="section">
-  <div class="container">
-    <div class="section-header">
-      <h2>Route at a glance</h2>
-      <div class="accent-bar"></div>
+<div class="sec"><div class="ctn">
+  <div class="sec-hd"><h2>Route overview</h2><div class="bar"></div></div>
+  <div class="tw"><table>
+    <thead><tr><th>Day</th><th>Leg</th><th class="r">Dist.</th><th class="r">Drive</th><th>Highlights</th></tr></thead>
+    <tbody>
+      <tr><td><strong>1</strong></td><td>Bengaluru → Mysuru (lunch) → Coorg</td><td class="r">260 km</td><td class="r">5–6 h</td><td>Palace, Chamundi, coffee estate</td></tr>
+      <tr><td><strong>2</strong></td><td>Full day Coorg</td><td class="r">50 km</td><td class="r">local</td><td>Falls, estates, Raja's Seat</td></tr>
+      <tr><td><strong>3</strong></td><td>Coorg → Ooty</td><td class="r">237 km</td><td class="r">~4 h</td><td>Forest drive, Doddabetta, tea</td></tr>
+      <tr><td><strong>4</strong></td><td>Ooty + Coonoor</td><td class="r">40 km</td><td class="r">local</td><td>Toy train, Dolphin's Nose</td></tr>
+      <tr><td><strong>5</strong></td><td>Ooty → Gokarna</td><td class="r">580 km</td><td class="r">9–10 h</td><td>Longest day, sunset arrival</td></tr>
+      <tr><td><strong>6</strong></td><td>Full day Gokarna</td><td class="r">local</td><td class="r">—</td><td>Beach trek, kayak, temple</td></tr>
+      <tr><td><strong>7</strong></td><td>Gokarna → Bengaluru</td><td class="r">485 km</td><td class="r">9–10 h</td><td>NH48, home by evening</td></tr>
+    </tbody>
+  </table></div>
+</div></div>
+
+<!-- DAY 1 -->
+<div class="sec" id="d1"><div class="ctn"><article class="day">
+  <div class="day-img"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mysore_Palace_Morning.jpg?width=1400" alt="Mysore Palace"><div class="overlay"><div class="dn">01</div><h3>Bengaluru → Mysuru → Coorg</h3><p>Royal stopover, then into misty coffee hills</p></div></div>
+  <div class="day-bd">
+    <div class="pills"><span class="pill">🛣️ ~260 km</span><span class="pill">⏱️ 5–6 h with stops</span><span class="pill">🌡️ 15–25 °C Coorg</span></div>
+    <div class="pg g4">
+      <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Chamundi_Hills_Mysore.jpg?width=500" alt="Chamundi Hills"><figcaption>Chamundi Hills</figcaption></figure>
+      <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Nandi_(Bull)_on_Chamundi_Hills_Mysore_(8367780110).jpg?width=500" alt="Nandi"><figcaption>Nandi Bull 4.9 m</figcaption></figure>
+      <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Devaraja_Market_-Mysore_-Karnataka_-20190214_172824.jpg?width=500" alt="Market"><figcaption>Devaraja Market</figcaption></figure>
+      <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Coffee_Coconuts_Pepper_Estate_Coorg_Feb24_A7C_09365.jpg?width=500" alt="Estate"><figcaption>Coffee estate arrival</figcaption></figure>
     </div>
-    <div class="table-wrap">
+    <div class="cols">
+      <div>
+        <span class="lbl">Morning — Mysuru (2–3 h stop)</span>
+        <ul>
+          <li><strong>Mysore Palace</strong> — most-visited palace in India. Opens 10 AM, ₹100 entry. Go early to beat queues</li>
+          <li><strong>Chamundi Hill</strong> — quick drive; Chamundeshwari Temple + city panorama + monolithic Nandi Bull on descent</li>
+          <li><strong>Lunch:</strong> <em>Mylari Dosa</em> (legendary since 1960) or <em>Hotel RRR</em> for Mysuru thali</li>
+        </ul>
+        <span class="lbl">Afternoon — to Coorg</span>
+        <ul>
+          <li>Mysuru → Madikeri: 120 km, 3 h via winding ghat roads</li>
+          <li>Arrive coffee-estate homestay by sunset</li>
+          <li>Dinner: pandi curry (Coorgi pork), kadambuttu (rice dumplings), bamboo-shoot pickle</li>
+        </ul>
+        <div class="research">
+          <span class="lbl">📋 Researched details</span>
+          <table>
+            <tr><td>Toll (car, one-way)</td><td>₹355 Bengaluru–Mysuru expressway (Apr 2026 rate, 3% hike). Barrier-free GNSS tolling from Jun 2026.</td></tr>
+            <tr><td>Speed limits</td><td>100 km/h general · 120 km/h on marked stretches. Heavy camera enforcement.</td></tr>
+            <tr><td>Expressway length</td><td>117 km access-controlled + 21 km Mysuru ring. ~1.5 h if no exits.</td></tr>
+          </table>
+        </div>
+      </div>
+      <div>
+        <div class="budget">
+          <span class="lbl">Day spend (2 people)</span>
+          <div class="row"><span>Estate homestay</span><span>₹4,500</span></div>
+          <div class="row"><span>Food (lunch + dinner)</span><span>₹1,800</span></div>
+          <div class="row"><span>Fuel + toll</span><span>₹1,700</span></div>
+          <div class="row"><span>Palace + parking</span><span>₹250</span></div>
+          <div class="tot"><span>Day total</span><span>~₹8,250</span></div>
+        </div>
+        <div class="co tip"><div class="h">✔ Timing tip</div>Leave Bengaluru 6:30 AM → Mysuru 9:30 → explore & lunch till 1:30 PM → Coorg 5 PM sunset.</div>
+      </div>
+    </div>
+  </div>
+</article></div></div>
+
+<!-- DAY 2 -->
+<div class="sec" id="d2"><div class="ctn"><article class="day">
+  <div class="day-img"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Abbey_Falls.jpg?width=1400" alt="Abbey Falls"><div class="overlay"><div class="dn">02</div><h3>Full day in Coorg</h3><p>Waterfalls, coffee walks & spice-estate life</p></div></div>
+  <div class="day-bd">
+    <div class="pills"><span class="pill">🛣️ ~50 km local</span><span class="pill">⛰️ 1,152 m elevation</span><span class="pill">🛏️ 2nd night Coorg</span></div>
+    <div class="pg g4">
+      <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Raja%27s_Seat%2C_Madikeri.jpg?width=500" alt="Raja's Seat"><figcaption>Raja's Seat</figcaption></figure>
+      <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Abbey_falls_coorg.jpg?width=500" alt="Abbey Falls"><figcaption>Abbey Falls trail</figcaption></figure>
+      <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Coffee_Shade_Trees_Paddy_Fields_Coorg_Feb24_R16_07670.jpg?width=500" alt="Valley"><figcaption>Coorg paddy valley</figcaption></figure>
+      <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Flower_Buds_Coffee_Robusta_Coorg_Feb24_D72_25939.jpg?width=500" alt="Coffee"><figcaption>Robusta blossoms</figcaption></figure>
+    </div>
+    <div class="cols">
+      <div>
+        <span class="lbl">Things to do</span>
+        <ul>
+          <li><strong>Morning estate walk</strong> — guided tour through robusta/arabica; bean-to-cup process; buy fresh roast</li>
+          <li><strong>Abbey Falls</strong> — 70 ft cascade through coffee & spice plantations</li>
+          <li><strong>Raja's Seat</strong> — Madikeri's signature sunset point with landscaped gardens</li>
+          <li><strong>Madikeri Fort</strong> — Tipu Sultan-era fort; quirky museum & temple inside</li>
+          <li><strong>Omkareshwara Temple</strong> — unique Islamic dome + Hindu temple hybrid</li>
+          <li>Optional AM: <strong>Dubare Elephant Camp</strong> (~30 km) — feed & bathe elephants</li>
+        </ul>
+        <div class="research">
+          <span class="lbl">📋 Coorg weather & season data</span>
+          <table>
+            <tr><td>Best months</td><td><strong>Oct–Feb</strong> (15–28 °C, post-monsoon green, clear skies). Coffee harvest Nov–Dec.</td></tr>
+            <tr><td>Monsoon (Jun–Sep)</td><td>Heavy rain, misty mornings, full waterfalls. Roads slippery, leeches on trails. Lower tariffs.</td></tr>
+            <tr><td>Summer (Mar–May)</td><td>Warm (up to 35 °C) but mountain breezes keep it bearable. Coffee blossom season (Apr).</td></tr>
+            <tr><td>Must buy</td><td>Single-origin coffee, wild honey, homemade fruit wine, pepper, cardamom, vanilla.</td></tr>
+          </table>
+        </div>
+      </div>
+      <div>
+        <div class="budget">
+          <span class="lbl">Day spend</span>
+          <div class="row"><span>Estate stay (2nd night)</span><span>₹4,500</span></div>
+          <div class="row"><span>Food (often included)</span><span>₹1,200</span></div>
+          <div class="row"><span>Activities</span><span>₹500</span></div>
+          <div class="tot"><span>Day total</span><span>~₹6,200</span></div>
+        </div>
+        <div class="co tip"><div class="h">✔ Don't over-schedule</div>The magic is the <em>homestay</em> itself — morning mist through coffee rows, kadambuttu dinner, silence. Leave space to just be.</div>
+      </div>
+    </div>
+  </div>
+</article></div></div>
+
+<!-- DAY 3 -->
+<div class="sec" id="d3"><div class="ctn"><article class="day">
+  <div class="day-img"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Nilgiri_Mountain_Railway.jpg?width=1400" alt="NMR"><div class="overlay"><div class="dn">03</div><h3>Coorg → Ooty</h3><p>One of South India's most spectacular drives</p></div></div>
+  <div class="day-bd">
+    <div class="pills"><span class="pill">🛣️ ~237 km</span><span class="pill">⏱️ ~4 h</span><span class="pill">⛰️ Climbs to 2,240 m</span></div>
+    <p style="margin-bottom:14px">The road transforms from dry deciduous forest into mist-wrapped tea slopes. You cross the Bandipur–Mudumalai wildlife corridor (elephants cross the road!) then climb the famous 36-hairpin ghat into the Nilgiris.</p>
+    <div class="pg g4">
+      <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Doddabetta_Peak.jpg?width=500" alt="Doddabetta"><figcaption>Doddabetta 2,637 m</figcaption></figure>
+      <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ooty_Lake.jpg?width=500" alt="Ooty Lake"><figcaption>Ooty Lake</figcaption></figure>
+      <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Botanical_Gardens_-_Ootacamund_(Ooty)_-_India_03.JPG?width=500" alt="Botanical"><figcaption>Botanical Garden</figcaption></figure>
+      <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/SW_Ketti_Valley_Nilgiris_Jul25_A7CR_06125.jpg?width=500" alt="Ketti"><figcaption>Ketti Valley</figcaption></figure>
+    </div>
+    <div class="cols">
+      <div>
+        <span class="lbl">Afternoon in Ooty</span>
+        <ul>
+          <li><strong>Doddabetta Peak</strong> (2,637 m) — highest Nilgiris; telescope house + 360° views</li>
+          <li><strong>Ooty Lake</strong> — pedal-boating; Rose Garden adjacent</li>
+          <li><strong>Botanical Garden</strong> — 22 acres, 1,000+ species, 20M-year-old fossil tree</li>
+          <li><strong>Tea factory</strong> — withering→rolling→drying demo; free tasting</li>
+          <li>Chocolate shops on Commercial Road (King Star, Moddy's)</li>
+        </ul>
+        <div class="co warn"><div class="h">⚠️ Bandipur night ban</div>NH766 through Bandipur: <strong>closed 9 PM–6 AM</strong>. Also 30 km/h limit inside the reserve, no honking. Leave Coorg by 7–8 AM.</div>
+      </div>
+      <div>
+        <div class="budget">
+          <div class="row"><span>Hill resort</span><span>₹5,000</span></div>
+          <div class="row"><span>Food</span><span>₹1,500</span></div>
+          <div class="row"><span>Entries + fuel</span><span>₹800</span></div>
+          <div class="tot"><span>Day total</span><span>~₹7,300</span></div>
+        </div>
+        <div class="co info"><div class="h">ℹ️ Fuel note</div>Refuel at Gudalur or Mettuppalayam. Petrol pumps are extremely limited on ghat roads (source: travel2ooty.com).</div>
+      </div>
+    </div>
+  </div>
+</article></div></div>
+
+<!-- DAY 4 -->
+<div class="sec" id="d4"><div class="ctn"><article class="day">
+  <div class="day-img"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Singara_Tea_Estate%2C_Coonoor.jpg?width=1400" alt="Coonoor"><div class="overlay"><div class="dn">04</div><h3>Ooty + Coonoor</h3><p>Tea estates, toy trains & valley viewpoints</p></div></div>
+  <div class="day-bd">
+    <div class="pills"><span class="pill">🛣️ ~40 km local</span><span class="pill">🚂 Toy train!</span><span class="pill">🛏️ 2nd night</span></div>
+    <div class="pg g3">
+      <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sim%27s_Park%2C_Coonoor.jpg?width=600" alt="Sim's Park"><figcaption>Sim's Park</figcaption></figure>
+      <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/SW_Ketti_Valley_Panorama_Nilgiris_Jul25_A7CR_06121-24_Pano.jpg?width=800" alt="Panorama"><figcaption>Ketti Valley panorama</figcaption></figure>
+      <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Gandhipuram_Tea_Estate_Coonoor_Nilgiris_Jun25_A7CR_05879.jpg?width=600" alt="Tea"><figcaption>Gandhipuram estate</figcaption></figure>
+    </div>
+    <div class="cols">
+      <div>
+        <span class="lbl">Things to do</span>
+        <ul>
+          <li><strong>Nilgiri Mountain Railway</strong> — UNESCO World Heritage; rack-and-pinion steam loco</li>
+          <li><strong>Dolphin's Nose</strong> — rock at 1,550 m; Catherine Falls view below</li>
+          <li><strong>Lamb's Rock</strong> — overlooking Coimbatore plains; quieter spot</li>
+          <li><strong>Sim's Park</strong> — 12-acre ravine garden, 1,000+ species</li>
+          <li><strong>Ketti Valley</strong> — "Switzerland of India"; stunning sunrise</li>
+        </ul>
+        <div class="research">
+          <span class="lbl">🚂 Toy train details (verified Jun 2026)</span>
+          <table>
+            <tr><td>Full route</td><td>Mettupalayam → Coonoor → Ooty. 46 km, ~5 hours up. Steam loco on Mettupalayam–Coonoor section only.</td></tr>
+            <tr><td>Short ride</td><td>Ooty ↔ Coonoor: 19 km, ~1.5 hrs. Diesel loco. Multiple daily services.</td></tr>
+            <tr><td>Timings</td><td>Up: 7:10 AM from Mettupalayam. Down: 2:00 PM from Ooty. Additional services Fri–Mon in peak season.</td></tr>
+            <tr><td>Fares</td><td>₹30 (unreserved) / ₹200 (first class) for Ooty–Coonoor section.</td></tr>
+            <tr><td>Booking</td><td>IRCTC online or NMR counter at Coonoor station. Book 2–3 days ahead in season.</td></tr>
+          </table>
+        </div>
+      </div>
+      <div>
+        <div class="budget">
+          <div class="row"><span>Resort (same property)</span><span>₹5,000</span></div>
+          <div class="row"><span>Food</span><span>₹1,200</span></div>
+          <div class="row"><span>Train + entries</span><span>₹400</span></div>
+          <div class="tot"><span>Day total</span><span>~₹6,600</span></div>
+        </div>
+        <div class="co tip"><div class="h">✔ Base in Coonoor</div>Skip Ooty town traffic. Stay in Coonoor or Ketti Valley — quieter, greener, better estate access.</div>
+      </div>
+    </div>
+  </div>
+</article></div></div>
+
+<!-- DAY 5 -->
+<div class="sec" id="d5"><div class="ctn"><article class="day">
+  <div class="day-img"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bandipur_National_Park.jpg?width=1400" alt="Bandipur"><div class="overlay"><div class="dn">05</div><h3>Ooty → Gokarna</h3><p>Mountains to coast — the big drive</p></div></div>
+  <div class="day-bd">
+    <div class="pills"><span class="pill warn">⚡ Longest day</span><span class="pill">🛣️ ~580 km</span><span class="pill">⏱️ 9–10 h</span><span class="pill">🏖️ Sunset arrival</span></div>
+    <p><strong>Route:</strong> Ooty → Gudalur → Bandipur → Mysuru bypass → NH48 → Hubballi → Gokarna.</p>
+    <div class="research" style="margin:16px 0">
+      <span class="lbl">📋 Route research (Team-BHP + Wanderlog verified)</span>
       <table>
-        <thead><tr><th>Day</th><th>Leg</th><th class="r">Distance</th><th class="r">Drive</th><th>Highlights</th></tr></thead>
-        <tbody>
-          <tr><td><strong>1</strong></td><td>Bengaluru → Mysuru (lunch) → Coorg</td><td class="r">~260 km</td><td class="r">5–6 h</td><td>Palace, Chamundi Hill, coffee estate</td></tr>
-          <tr><td><strong>2</strong></td><td>Full day Coorg</td><td class="r">~50 km</td><td class="r">local</td><td>Abbey Falls, estates, Raja's Seat</td></tr>
-          <tr><td><strong>3</strong></td><td>Coorg → Ooty</td><td class="r">~237 km</td><td class="r">~4 h</td><td>Forest drive, Doddabetta, tea factory</td></tr>
-          <tr><td><strong>4</strong></td><td>Ooty + Coonoor</td><td class="r">~40 km</td><td class="r">local</td><td>Toy train, Dolphin's Nose, Sim's Park</td></tr>
-          <tr><td><strong>5</strong></td><td>Ooty → Gokarna</td><td class="r">~580 km</td><td class="r">9–10 h</td><td>Longest day — arrive for sunset</td></tr>
-          <tr><td><strong>6</strong></td><td>Full day Gokarna</td><td class="r">local</td><td class="r">—</td><td>Beach trek, kayaking, temples</td></tr>
-          <tr><td><strong>7</strong></td><td>Gokarna → Bengaluru</td><td class="r">~485 km</td><td class="r">9–10 h</td><td>NH48, home by evening</td></tr>
-        </tbody>
+        <tr><td>Total distance</td><td>578–607 km depending on exact route (Wanderlog: 377 mi / Rome2Rio: 578 km direct)</td></tr>
+        <tr><td>Drive time</td><td>8.5–10 hrs realistic (includes fuel stops, 30 km/h Bandipur zone)</td></tr>
+        <tr><td>Best route</td><td>Ooty → Gudalur → Gundlupet → Mysuru bypass → Hubballi → Ankola → Gokarna. NH48 from Hubballi is excellent 4-lane.</td></tr>
+        <tr><td>Avoid</td><td>Sirsi ghat section — narrow, slow. Team-BHP drivers recommend Hubballi–Yellapur–Ankola instead.</td></tr>
+        <tr><td>Fuel strategy</td><td>Full tank at Ooty. Refuel at Nanjangud/Mysuru area. Next stop: Hubballi. Don't rely on pumps in Bandipur.</td></tr>
+        <tr><td>NH48 condition</td><td>"Post Hubli till Tumakuru, bliss to drive, easily 90 km/h" — Team-BHP Oct 2025 report.</td></tr>
       </table>
     </div>
-  </div>
-</div>
-
-<!-- ═══════════════════ DAY 1 ═══════════════════ -->
-<div class="section" id="day1">
-  <div class="container">
-    <article class="day-card">
-      <div class="day-hero">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mysore_Palace_Morning.jpg?width=1600" alt="Mysore Palace">
-        <div class="day-hero-overlay">
-          <div class="day-num">01</div>
-          <h3>Bengaluru → Mysuru → Coorg</h3>
-          <p class="sub">Royal stopover, then into misty coffee country</p>
-        </div>
-      </div>
-      <div class="day-content">
-        <div class="pills">
-          <span class="pill">🛣️ ~260 km total</span>
-          <span class="pill">⏱️ 5–6 hrs with stops</span>
-          <span class="pill">🌡️ 15–25°C at Coorg</span>
-        </div>
-        <div class="photo-grid g4">
-          <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Chamundi_Hills_Mysore.jpg?width=500" alt="Chamundi Hills"><figcaption>Chamundi Hills</figcaption></figure>
-          <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Nandi_(Bull)_on_Chamundi_Hills_Mysore_(8367780110).jpg?width=500" alt="Nandi Bull"><figcaption>Nandi Bull (4.9 m)</figcaption></figure>
-          <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Devaraja_Market_-Mysore_-Karnataka_-20190214_172824.jpg?width=500" alt="Devaraja Market"><figcaption>Devaraja Market</figcaption></figure>
-          <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Coffee_Coconuts_Pepper_Estate_Coorg_Feb24_A7C_09365.jpg?width=500" alt="Coffee estate"><figcaption>Coorg coffee estate</figcaption></figure>
-        </div>
-        <div class="two-col">
-          <div>
-            <span class="label">Morning — Mysuru (2–3 hr stop)</span>
-            <ul>
-              <li><strong>Mysore Palace</strong> — most-visited palace in India; arrive when it opens at 10 AM. ₹100 entry</li>
-              <li><strong>Chamundi Hill</strong> — quick drive up; Chamundeshwari Temple + city panorama. See the monolithic Nandi Bull on the descent</li>
-              <li><strong>Lunch:</strong> <em>Mylari Dosa</em> (legendary since 1960) or <em>Hotel RRR</em> for a Mysuru thali</li>
-            </ul>
-            <span class="label">Afternoon — Drive to Coorg</span>
-            <ul>
-              <li>Mysuru → Madikeri: ~120 km, 3 hrs through winding ghats</li>
-              <li>Check into your coffee-estate homestay by sunset</li>
-              <li>Evening at leisure — Coorgi dinner: pandi curry, kadambuttu, bamboo shoot pickle</li>
-            </ul>
-            <div class="callout tip">
-              <div class="heading">✔ Timing</div>
-              Leave Bengaluru by 6:30 AM. The expressway gets you to Mysuru by 9:30. Explore & lunch till 1:30 PM. Reach Coorg by 5 PM for sunset.
-            </div>
-          </div>
-          <div>
-            <div class="budget-box">
-              <span class="label">Day spend (2 people)</span>
-              <div class="row"><span>Estate homestay</span><span>₹4,500</span></div>
-              <div class="row"><span>Food (lunch + dinner)</span><span>₹1,800</span></div>
-              <div class="row"><span>Fuel + tolls</span><span>₹1,500</span></div>
-              <div class="row"><span>Palace entry + parking</span><span>₹250</span></div>
-              <div class="total"><span>Day total</span><span>~₹8,050</span></div>
-            </div>
-            <div class="callout info" style="margin-top:16px">
-              <div class="heading">ℹ️ Expressway note</div>
-              Bengaluru–Mysuru Expressway is heavily camera-policed. Stick to posted 100/120 km/h limits. FASTag required.
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-  </div>
-</div>
-
-<!-- ═══════════════════ DAY 2 ═══════════════════ -->
-<div class="section" id="day2">
-  <div class="container">
-    <article class="day-card">
-      <div class="day-hero">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Abbey_Falls.jpg?width=1600" alt="Abbey Falls Coorg">
-        <div class="day-hero-overlay">
-          <div class="day-num">02</div>
-          <h3>Full day in Coorg</h3>
-          <p class="sub">Waterfalls, coffee walks & spice-estate life</p>
-        </div>
-      </div>
-      <div class="day-content">
-        <div class="pills">
-          <span class="pill">🛣️ ~50 km local</span>
-          <span class="pill">⛰️ 1,152 m elevation</span>
-          <span class="pill">🛏️ 2nd night, Coorg</span>
-        </div>
-        <div class="photo-grid g4">
-          <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Raja%27s_Seat%2C_Madikeri.jpg?width=500" alt="Raja's Seat"><figcaption>Raja's Seat sunset</figcaption></figure>
-          <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Abbey_falls_coorg.jpg?width=500" alt="Abbey Falls"><figcaption>Abbey Falls trail</figcaption></figure>
-          <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Coffee_Shade_Trees_Paddy_Fields_Coorg_Feb24_R16_07670.jpg?width=500" alt="Coorg valley"><figcaption>Coffee & paddy fields</figcaption></figure>
-          <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Flower_Buds_Coffee_Robusta_Coorg_Feb24_D72_25939.jpg?width=500" alt="Coffee flowers"><figcaption>Robusta coffee blossoms</figcaption></figure>
-        </div>
-        <div class="two-col">
-          <div>
-            <span class="label">Things to do</span>
-            <ul>
-              <li><strong>Morning estate walk</strong> — guided tour through coffee & pepper rows; bean-to-cup process; buy fresh roast direct</li>
-              <li><strong>Abbey Falls</strong> — 70-ft cascade through plantations; best Sep–Dec post-monsoon</li>
-              <li><strong>Raja's Seat</strong> — Madikeri's signature sunset viewpoint with landscaped gardens</li>
-              <li><strong>Madikeri Fort</strong> — Tipu Sultan-era fort with museum & temple inside</li>
-              <li><strong>Omkareshwara Temple</strong> — unique Islamic dome + Hindu temple hybrid</li>
-              <li>Optional AM: <strong>Dubare Elephant Camp</strong> (~30 km) — bathe & feed rescued elephants</li>
-            </ul>
-            <div class="callout tip">
-              <div class="heading">✔ Don't over-schedule</div>
-              The magic of Coorg is the <em>homestay</em> itself — morning mist through coffee rows, homemade wine at dinner, the silence. Leave space to just be.
-            </div>
-          </div>
-          <div>
-            <div class="budget-box">
-              <span class="label">Day spend</span>
-              <div class="row"><span>Estate stay (2nd night)</span><span>₹4,500</span></div>
-              <div class="row"><span>Food (often included)</span><span>₹1,200</span></div>
-              <div class="row"><span>Activities</span><span>₹500</span></div>
-              <div class="total"><span>Day total</span><span>~₹6,200</span></div>
-            </div>
-            <div class="callout info" style="margin-top:16px">
-              <div class="heading">🛍️ What to buy</div>
-              <ul>
-                <li>Single-origin coffee (robusta & peaberry)</li>
-                <li>Wild Coorg honey</li>
-                <li>Homemade fruit wines</li>
-                <li>Black pepper, cardamom, vanilla</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-  </div>
-</div>
-
-<!-- ═══════════════════ DAY 3 ═══════════════════ -->
-<div class="section" id="day3">
-  <div class="container">
-    <article class="day-card">
-      <div class="day-hero">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Nilgiri_Mountain_Railway.jpg?width=1600" alt="Nilgiri Mountain Railway">
-        <div class="day-hero-overlay">
-          <div class="day-num">03</div>
-          <h3>Coorg → Ooty</h3>
-          <p class="sub">One of South India's most spectacular drives</p>
-        </div>
-      </div>
-      <div class="day-content">
-        <div class="pills">
-          <span class="pill">🛣️ ~237 km</span>
-          <span class="pill">⏱️ ~4 hours</span>
-          <span class="pill">⛰️ Climbs to 2,240 m</span>
-        </div>
-        <p style="margin-bottom:16px">The road transforms from dry deciduous forest into mist-wrapped tea slopes. You'll cross the Bandipur–Mudumalai wildlife corridor (watch for elephants crossing!) before the famous 36-hairpin climb into the Nilgiris.</p>
-        <div class="photo-grid g4">
-          <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Doddabetta_Peak.jpg?width=500" alt="Doddabetta"><figcaption>Doddabetta (2,637 m)</figcaption></figure>
-          <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ooty_Lake.jpg?width=500" alt="Ooty Lake"><figcaption>Ooty Lake</figcaption></figure>
-          <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Botanical_Gardens_-_Ootacamund_(Ooty)_-_India_03.JPG?width=500" alt="Botanical Garden"><figcaption>Botanical Garden</figcaption></figure>
-          <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/SW_Ketti_Valley_Nilgiris_Jul25_A7CR_06125.jpg?width=500" alt="Ketti Valley"><figcaption>Ketti Valley</figcaption></figure>
-        </div>
-        <div class="two-col">
-          <div>
-            <span class="label">Afternoon & evening in Ooty</span>
-            <ul>
-              <li><strong>Doddabetta Peak</strong> (2,637 m) — highest in the Nilgiris; telescope house + 360° views</li>
-              <li><strong>Ooty Lake</strong> — pedal-boating; Rose Garden nearby</li>
-              <li><strong>Botanical Garden</strong> — 22 acres; 1,000+ species; 20-million-year-old fossilised tree trunk</li>
-              <li><strong>Tea factory tour</strong> — watch withering→rolling→drying; free tasting</li>
-              <li>Chocolate shops on Commercial Road (King Star, Moddy's)</li>
-            </ul>
-          </div>
-          <div>
-            <div class="budget-box">
-              <div class="row"><span>Hill resort</span><span>₹5,000</span></div>
-              <div class="row"><span>Food</span><span>₹1,500</span></div>
-              <div class="row"><span>Entries + fuel</span><span>₹800</span></div>
-              <div class="total"><span>Day total</span><span>~₹7,300</span></div>
-            </div>
-            <div class="callout warn" style="margin-top:16px">
-              <div class="heading">⚠️ Bandipur night ban</div>
-              NH766 through Bandipur is <strong>closed 9 PM–6 AM</strong>. Leave Coorg early to clear the forest in daylight.
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-  </div>
-</div>
-
-<!-- ═══════════════════ DAY 4 ═══════════════════ -->
-<div class="section" id="day4">
-  <div class="container">
-    <article class="day-card">
-      <div class="day-hero">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Singara_Tea_Estate%2C_Coonoor.jpg?width=1600" alt="Coonoor tea estate">
-        <div class="day-hero-overlay">
-          <div class="day-num">04</div>
-          <h3>Ooty + Coonoor</h3>
-          <p class="sub">Tea estates, toy trains & valley viewpoints</p>
-        </div>
-      </div>
-      <div class="day-content">
-        <div class="pills">
-          <span class="pill">🛣️ ~40 km local</span>
-          <span class="pill">🚂 Toy train day!</span>
-          <span class="pill">🛏️ 2nd night</span>
-        </div>
-        <div class="photo-grid g3">
-          <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sim%27s_Park%2C_Coonoor.jpg?width=600" alt="Sim's Park"><figcaption>Sim's Park</figcaption></figure>
-          <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/SW_Ketti_Valley_Panorama_Nilgiris_Jul25_A7CR_06121-24_Pano.jpg?width=800" alt="Ketti Valley panorama"><figcaption>Ketti Valley panorama</figcaption></figure>
-          <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Gandhipuram_Tea_Estate_Coonoor_Nilgiris_Jun25_A7CR_05879.jpg?width=600" alt="Tea estate"><figcaption>Gandhipuram Tea Estate</figcaption></figure>
-        </div>
-        <div class="two-col">
-          <div>
-            <span class="label">Things to do</span>
-            <ul>
-              <li><strong>Nilgiri Mountain Railway</strong> — UNESCO heritage; rack-and-pinion steam. Coonoor→Ooty short section easiest to book (₹30 unreserved / ₹200 FC)</li>
-              <li><strong>Dolphin's Nose</strong> — dramatic rock at 1,550 m; view of Catherine Falls plunging into the gorge</li>
-              <li><strong>Lamb's Rock</strong> — overlooking Coimbatore plains; quieter alternative</li>
-              <li><strong>Sim's Park</strong> — 12-acre botanical garden in a ravine</li>
-              <li><strong>Ketti Valley</strong> — "Switzerland of India"; stunning sunrise</li>
-              <li><strong>Tea estate walk</strong> — many welcome visitors mid-morning</li>
-            </ul>
-            <div class="callout tip">
-              <div class="heading">✔ Local secret</div>
-              Base in <strong>Coonoor or Ketti Valley</strong> rather than Ooty town — quieter, greener, and you skip the traffic chaos.
-            </div>
-          </div>
-          <div>
-            <div class="budget-box">
-              <div class="row"><span>Resort (same property)</span><span>₹5,000</span></div>
-              <div class="row"><span>Food</span><span>₹1,200</span></div>
-              <div class="row"><span>Train + entries</span><span>₹400</span></div>
-              <div class="total"><span>Day total</span><span>~₹6,600</span></div>
-            </div>
-            <div class="callout info" style="margin-top:16px">
-              <div class="heading">🎫 Book the toy train early</div>
-              Sells out days ahead in season. Check IRCTC or the NMR counter at Coonoor station. The Mettuppalayam→Coonoor section (with steam loco) is the most iconic.
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-  </div>
-</div>
-
-<!-- ═══════════════════ DAY 5 ═══════════════════ -->
-<div class="section" id="day5">
-  <div class="container">
-    <article class="day-card">
-      <div class="day-hero">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bandipur_National_Park.jpg?width=1600" alt="Bandipur">
-        <div class="day-hero-overlay">
-          <div class="day-num">05</div>
-          <h3>Ooty → Gokarna</h3>
-          <p class="sub">Mountains to coast — the big drive day</p>
-        </div>
-      </div>
-      <div class="day-content">
-        <div class="pills">
-          <span class="pill" style="background:#fef3c7;color:#92400e">⚡ Longest day</span>
-          <span class="pill">🛣️ ~580 km</span>
-          <span class="pill">⏱️ 9–10 hrs</span>
-          <span class="pill">🏖️ Beach arrival</span>
-        </div>
-        <p style="margin:12px 0"><strong>Route:</strong> Ooty → Gudalur → Bandipur corridor → Mysuru bypass → Hubballi → Gokarna. You'll descend through wildlife forest at dawn (elephants are common!) and hit smooth highway from Hubballi onward.</p>
-        <div class="callout warn">
-          <div class="heading">⚠️ Strategy for the long day</div>
-          <ul>
-            <li>Leave by <strong>5 AM</strong>. Clear Bandipur forest before traffic builds.</li>
-            <li>Breakfast: Mysuru area (~3 hrs from Ooty)</li>
-            <li>Lunch: Hubballi (~6 hrs). NH48 onward is fast 4-lane.</li>
-            <li>Arrive Gokarna: 4–5 PM — just in time for a sunset swim at Kudle Beach.</li>
-            <li>Fuel up the night before (sparse pumps on early stretches).</li>
-          </ul>
-        </div>
-        <div class="two-col" style="margin-top:16px">
-          <div>
-            <span class="label">Why it's worth it</span>
-            <ul>
-              <li>You wake up shivering in hills and fall asleep to crashing waves — hard to beat</li>
-              <li>Dawn through Bandipur is magical for wildlife sightings</li>
-              <li>NH48 from Hubballi is well-maintained 4-lane</li>
-            </ul>
-            <span class="label" style="margin-top:14px">Easier alternative</span>
-            <p style="font-size:.88rem">Flip it: <strong>Bengaluru → Coorg → Gokarna → Ooty → Bengaluru</strong> (counter-clockwise). Coorg→Gokarna is only ~350 km, and Ooty→Bengaluru is just 270 km home. See the alternative box below.</p>
-          </div>
-          <div>
-            <div class="budget-box">
-              <div class="row"><span>Beachside property</span><span>₹5,000</span></div>
-              <div class="row"><span>Food + fuel (long day)</span><span>₹3,500</span></div>
-              <div class="total"><span>Day total</span><span>~₹8,500</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-  </div>
-</div>
-
-<!-- ═══════════════════ DAY 6 ═══════════════════ -->
-<div class="section" id="day6">
-  <div class="container">
-    <article class="day-card">
-      <div class="day-hero">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Om_Beach_Gokarna.jpg?width=1600" alt="Om Beach Gokarna">
-        <div class="day-hero-overlay">
-          <div class="day-num">06</div>
-          <h3>Full day in Gokarna</h3>
-          <p class="sub">Beach treks, water sports, temples & seafood</p>
-        </div>
-      </div>
-      <div class="day-content">
-        <div class="pills">
-          <span class="pill">🏖️ 5 beaches</span>
-          <span class="pill">🛶 Kayaking</span>
-          <span class="pill">🛏️ 2nd night, Gokarna</span>
-        </div>
-        <div class="photo-grid g4">
-          <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kudle_Beach%2C_Gokarna.jpg?width=500" alt="Kudle Beach"><figcaption>Kudle Beach</figcaption></figure>
-          <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/PXL_20260103_091848995.MP_Half_Moon_Beach_Gokarna_Karnatak_01.jpg?width=500" alt="Half Moon Beach"><figcaption>Half Moon Beach</figcaption></figure>
-          <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Murudeshwar_2.jpg?width=500" alt="Murudeshwar"><figcaption>Murudeshwar (day trip)</figcaption></figure>
-          <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Yana_Caves%2C_located_in_the_Uttara_Kannada_district_of_Karnataka.jpg?width=500" alt="Yana Caves"><figcaption>Yana Caves (day trip)</figcaption></figure>
-        </div>
-        <div class="two-col">
-          <div>
-            <span class="label">Beaches & activities</span>
-            <ul>
-              <li><strong>Om Beach</strong> — ॐ-shaped; jet ski, banana boat, parasailing</li>
-              <li><strong>Kudle Beach</strong> — cliff cafés, the best sunset in Gokarna</li>
-              <li><strong>Beach trek:</strong> Om → Half Moon → Paradise (2–3 hrs one way). Start before 9 AM, carry water, wear shoes not flip-flops</li>
-              <li><strong>Kayaking</strong> — guided from Om Beach to secret coves (~₹1,500/person)</li>
-              <li><strong>Mahabaleshwara Temple</strong> — one of 7 mukti-sthalas; ancient Atmalinga. Dress modestly</li>
-            </ul>
-            <span class="label" style="margin-top:14px">Optional day trips</span>
-            <ul>
-              <li><strong>Murudeshwar</strong> (80 km) — 37 m Shiva statue on an ocean cliff</li>
-              <li><strong>Yana Caves</strong> (50 km) — black limestone spires in dense forest</li>
-              <li><strong>Mirjan Fort</strong> (24 km) — photogenic 16th-century laterite ruin</li>
-            </ul>
-          </div>
-          <div>
-            <div class="budget-box">
-              <div class="row"><span>Beach stay (2nd night)</span><span>₹5,000</span></div>
-              <div class="row"><span>Food (fresh seafood!)</span><span>₹2,000</span></div>
-              <div class="row"><span>Water sports / kayak</span><span>₹1,500</span></div>
-              <div class="total"><span>Day total</span><span>~₹8,500</span></div>
-            </div>
-            <div class="callout tip" style="margin-top:16px">
-              <div class="heading">✔ Trek tip</div>
-              Trek <em>to</em> Paradise Beach and take a ₹200 boat <em>back</em> to Om Beach. Saves knees + you see the cliffs from sea level.
-            </div>
-            <div class="callout info" style="margin-top:12px">
-              <div class="heading">🍽️ Eat here</div>
-              <em>Namaste Café</em> (Om Beach) for sunset drinks. <em>Pai Hotel</em> in town for authentic North Karnataka thali. Any beach shack for grilled fish.
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-  </div>
-</div>
-
-<!-- ═══════════════════ DAY 7 ═══════════════════ -->
-<div class="section" id="day7">
-  <div class="container">
-    <article class="day-card">
-      <div class="day-hero">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Gokarna_temple_beach.JPG?width=1600" alt="Gokarna main beach">
-        <div class="day-hero-overlay">
-          <div class="day-num">07</div>
-          <h3>Gokarna → Bengaluru</h3>
-          <p class="sub">The long run home via NH48</p>
-        </div>
-      </div>
-      <div class="day-content">
-        <div class="pills">
-          <span class="pill">🛣️ ~485 km</span>
-          <span class="pill">⏱️ 9–10 hrs</span>
-          <span class="pill">🏁 Home by evening</span>
-        </div>
-        <p style="margin:12px 0">Take the <strong>NH48</strong> (Gokarna → Hubballi → Haveri → Davangere → Chitradurga → Tumkur → Bengaluru). Avoid the scenic-but-slow Sirsi ghat shortcut on the final day.</p>
-        <div class="callout tip">
-          <div class="heading">✔ Final day game plan</div>
-          <ul>
-            <li>Leave by <strong>5 AM</strong> — catch sunrise on the coast road</li>
-            <li>Fuel up the night before</li>
-            <li>Breakfast: Hubballi (~2.5 hrs)</li>
-            <li>Lunch: Davangere/Chitradurga (famous for Davangere benne dosa)</li>
-            <li>Target: arrive by 4–5 PM (beat Bengaluru outer-ring rush)</li>
-            <li>Total tolls: ~₹600–800</li>
-          </ul>
-        </div>
-      </div>
-    </article>
-  </div>
-</div>
-
-<!-- ═══════════════════ COSTS ═══════════════════ -->
-<div class="section" id="costs">
-  <div class="container">
-    <div class="section-header">
-      <h2>Total cost — 2 people</h2>
-      <div class="accent-bar"></div>
-    </div>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Item</th><th class="r">Cost (₹)</th><th>Notes</th></tr></thead>
-        <tbody>
-          <tr><td>Fuel</td><td class="r">~₹9,000</td><td>~1,350 km · 15 km/l · ₹100/l</td></tr>
-          <tr><td>Stays (6 nights)</td><td class="r">₹27,000–35,000</td><td>Homestays, hill resort, beach property</td></tr>
-          <tr><td>Food</td><td class="r">₹9,000–12,000</td><td>₹1,500–2,000/day</td></tr>
-          <tr><td>Activities</td><td class="r">₹3,000–6,000</td><td>Water sports, train, entries</td></tr>
-          <tr><td>Tolls</td><td class="r">~₹1,500</td><td>FASTag (expressway + NH48)</td></tr>
-          <tr><td>Miscellaneous</td><td class="r">₹2,000</td><td>Parking, shopping, tips</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="cost-grid">
-      <div class="cost-card"><div class="tier">Budget</div><div class="price">₹50,000</div><div class="desc">Basic stays, self-cook/roadside meals</div></div>
-      <div class="cost-card featured"><div class="tier">Comfort ★</div><div class="price">₹65,000</div><div class="desc">Good restaurants, all activities included</div></div>
-      <div class="cost-card"><div class="tier">Luxury</div><div class="price">₹1,00,000+</div><div class="desc">Premium resorts, fine dining, private tours</div></div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══════════════════ TIPS ═══════════════════ -->
-<div class="section" id="tips">
-  <div class="container">
-    <div class="section-header">
-      <h2>Practical tips</h2>
-      <div class="accent-bar"></div>
-    </div>
-    <div class="tips-grid">
-      <div class="tip-box">
-        <h4>🗓️ Best time to go</h4>
-        <ul>
-          <li><strong>Oct–Mar:</strong> ideal — cool hills, dry coast</li>
-          <li><strong>Sep–Oct:</strong> waterfalls at peak; some ghat fog</li>
-          <li><strong>Apr–May:</strong> hot plains, pleasant hills</li>
-          <li>Avoid Jun–Aug (heavy ghat rain, poor visibility)</li>
-        </ul>
-      </div>
-      <div class="tip-box">
-        <h4>🚗 Self-drive checklist</h4>
-        <ul>
-          <li>Car papers, DL, FASTag, insurance copy</li>
-          <li>Spare tyre (pressure checked!), jack, toolkit</li>
-          <li><strong>Offline Google Maps</strong> — no signal in forests</li>
-          <li>Dashcam · phone mount · car charger</li>
-        </ul>
-      </div>
-      <div class="tip-box">
-        <h4>⚠️ Key road rules</h4>
-        <ul>
-          <li>Bandipur: <strong>night ban 9 PM–6 AM</strong></li>
-          <li>Expressway: speed cameras (100/120 zones)</li>
-          <li>Tamil Nadu entry: green tax ₹150–300 may apply</li>
-          <li>Wildlife zones: no honking, 30 km/h limit</li>
-        </ul>
-      </div>
-      <div class="tip-box">
-        <h4>🎒 What to pack</h4>
-        <ul>
-          <li>Fleece/light jacket (hills: 8–12°C at night)</li>
-          <li>Rain jacket (ghats surprise year-round)</li>
-          <li>Walking shoes (trek + estate walks)</li>
-          <li>Swimwear + quick-dry towel for Gokarna</li>
-          <li>Modest clothes for temples (cover shoulders)</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══════════════════ ALTERNATIVE ═══════════════════ -->
-<div class="section" id="alt">
-  <div class="container">
-    <div class="section-header">
-      <h2>Counter-clockwise alternative</h2>
-      <div class="accent-bar"></div>
-      <p>If the 580 km Day 5 feels like too much, flip the Gokarna and Ooty order.</p>
-    </div>
-    <div class="alt-route">
-      <h3>The "easy finish" version</h3>
-      <div class="route-highlight">Bengaluru → Coorg (2N) → Gokarna (2N) → Ooty / Coonoor (2N) → Bengaluru</div>
-      <ul style="padding-left:18px;font-size:.9rem;margin-top:12px">
-        <li><strong>Coorg → Gokarna:</strong> ~350 km / 6–7 hrs (much more manageable)</li>
-        <li><strong>Gokarna → Ooty:</strong> ~580 km / 9 hrs (same long day, but you're rested after 2 beach days)</li>
-        <li><strong>Ooty → Bengaluru:</strong> ~270 km / 5 hrs via Mysuru (the easiest drive home!)</li>
+    <div class="co warn"><div class="h">⚠️ Day 5 game plan</div>
+      <ul>
+        <li>Leave Ooty <strong>5 AM</strong>. Clear Bandipur by 7–8 AM (wildlife on road at dawn!)</li>
+        <li>Breakfast: Mysuru area (~3 h). Lunch: Hubballi (~6 h). Both have good dhabas.</li>
+        <li>NH48 Hubballi onward: smooth, fast, well-lit.</li>
+        <li>Arrive Gokarna 4–5 PM → sunset swim at Kudle Beach.</li>
       </ul>
-      <p style="margin-top:12px;font-size:.9rem">This version ends with the <em>shortest</em> drive home — you arrive fresh instead of drained.</p>
+    </div>
+    <div class="cols">
+      <div><div class="co tip"><div class="h">✔ Why it's worth it</div>You wake shivering in the hills and fall asleep to crashing waves. Dawn through Bandipur is magical for wildlife. And the contrast recharges you.</div></div>
+      <div><div class="budget"><div class="row"><span>Beachside property</span><span>₹5,000</span></div><div class="row"><span>Food + fuel (long day)</span><span>₹3,500</span></div><div class="tot"><span>Day total</span><span>~₹8,500</span></div></div></div>
     </div>
   </div>
-</div>
+</article></div></div>
 
+<!-- DAY 6 -->
+<div class="sec" id="d6"><div class="ctn"><article class="day">
+  <div class="day-img"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Om_Beach_Gokarna.jpg?width=1400" alt="Om Beach"><div class="overlay"><div class="dn">06</div><h3>Full day in Gokarna</h3><p>Beach treks, water sports & sacred temples</p></div></div>
+  <div class="day-bd">
+    <div class="pills"><span class="pill">🏖️ 5 beaches</span><span class="pill">🛶 Kayak</span><span class="pill">🛏️ 2nd night</span></div>
+    <div class="pg g4">
+      <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kudle_Beach%2C_Gokarna.jpg?width=500" alt="Kudle"><figcaption>Kudle Beach</figcaption></figure>
+      <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/PXL_20260103_091848995.MP_Half_Moon_Beach_Gokarna_Karnatak_01.jpg?width=500" alt="Half Moon"><figcaption>Half Moon Beach</figcaption></figure>
+      <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Murudeshwar_2.jpg?width=500" alt="Murudeshwar"><figcaption>Murudeshwar (day trip)</figcaption></figure>
+      <figure><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Yana_Caves%2C_located_in_the_Uttara_Kannada_district_of_Karnataka.jpg?width=500" alt="Yana"><figcaption>Yana Caves (day trip)</figcaption></figure>
+    </div>
+    <div class="cols">
+      <div>
+        <span class="lbl">Beaches & activities</span>
+        <ul>
+          <li><strong>Om Beach</strong> — ॐ-shaped; jet ski, banana boat, parasailing</li>
+          <li><strong>Kudle Beach</strong> — cliff cafés, best sunset point</li>
+          <li><strong>Beach trek:</strong> Om → Half Moon → Paradise (2–3 h one way)</li>
+          <li><strong>Kayaking</strong> — Om Beach to hidden coves (~₹500–1,500/person)</li>
+          <li><strong>Mahabaleshwara Temple</strong> — 7 mukti-sthalas; ancient Atmalinga</li>
+        </ul>
+        <div class="research">
+          <span class="lbl">📋 Beach trek research</span>
+          <table>
+            <tr><td>Route</td><td>Om Beach → Half Moon → Paradise (or reverse). One-way over rocky headlands.</td></tr>
+            <tr><td>Time</td><td>Om→Half Moon: 1–1.5 h. Half Moon→Paradise: 20–30 min more. Full: 2–3 h one way.</td></tr>
+            <tr><td>Difficulty</td><td>Easy-moderate. Rocky in parts. <strong>Wear shoes not flip-flops.</strong></td></tr>
+            <tr><td>Best time</td><td>Start before 9 AM (harsh sun later). Oct–May (calm seas). Avoid monsoon.</td></tr>
+            <tr><td>Return</td><td>Trek back OR boat from Paradise/Half Moon to Om Beach (~₹200/person).</td></tr>
+            <tr><td>Water sports season</td><td>Oct–May when seas are calm. Best visibility for dolphins: early AM.</td></tr>
+          </table>
+        </div>
+        <span class="lbl" style="margin-top:14px">Optional day trips</span>
+        <ul>
+          <li><strong>Murudeshwar</strong> (80 km) — 37 m Shiva statue on ocean cliff</li>
+          <li><strong>Yana Caves</strong> (50 km) — black limestone spires in forest</li>
+          <li><strong>Mirjan Fort</strong> (24 km) — photogenic 16th-c. ruin</li>
+        </ul>
+      </div>
+      <div>
+        <div class="budget">
+          <div class="row"><span>Beach stay (2nd night)</span><span>₹5,000</span></div>
+          <div class="row"><span>Food (seafood!)</span><span>₹2,000</span></div>
+          <div class="row"><span>Water sports</span><span>₹1,500</span></div>
+          <div class="tot"><span>Day total</span><span>~₹8,500</span></div>
+        </div>
+        <div class="co tip"><div class="h">✔ Smart trek plan</div>Trek <em>to</em> Paradise, boat <em>back</em> to Om (₹200). Saves knees + sea-level cliff views.</div>
+        <div class="co info"><div class="h">🍽️ Eat here</div><em>Namaste Café</em> (Om Beach) — sunset drinks. <em>Pai Hotel</em> in town — N. Karnataka thali. Any beach shack — grilled fish of the day.</div>
+      </div>
+    </div>
+  </div>
+</article></div></div>
+
+<!-- DAY 7 -->
+<div class="sec" id="d7"><div class="ctn"><article class="day">
+  <div class="day-img"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Gokarna_temple_beach.JPG?width=1400" alt="Gokarna"><div class="overlay"><div class="dn">07</div><h3>Gokarna → Bengaluru</h3><p>The long run home via NH48</p></div></div>
+  <div class="day-bd">
+    <div class="pills"><span class="pill">🛣️ ~485 km</span><span class="pill">⏱️ 9–10 h</span><span class="pill">🏁 Home by evening</span></div>
+    <div class="research" style="margin:12px 0 16px">
+      <span class="lbl">📋 Return route research</span>
+      <table>
+        <tr><td>Best route</td><td>Gokarna → Hubballi → Haveri → Davangere → Chitradurga → Tumkur → Bengaluru (NH48). Majority 4-lane.</td></tr>
+        <tr><td>Avoid</td><td>Sirsi ghat shortcut — narrow, tiring, negates any distance saving.</td></tr>
+        <tr><td>Alt route (Team-BHP rec)</td><td>Gokarna → Kumta → Honnavara → Sagara → Shimoga → Bengaluru. Longer by 80 km but NH66 coast section is excellent.</td></tr>
+        <tr><td>Road condition</td><td>"Post Hubli till Tumakuru, bliss to drive, easily 90 km/h" — Team-BHP Dec 2025.</td></tr>
+        <tr><td>Fuel stops</td><td>Reliable at Hubballi, Haveri, Davangere, Chitradurga, Tumkur. Leave with full tank anyway.</td></tr>
+        <tr><td>Tolls</td><td>~₹600–800 total on NH48 (FASTag).</td></tr>
+      </table>
+    </div>
+    <div class="co tip"><div class="h">✔ Final day game plan</div>
+      <ul>
+        <li>Leave <strong>5 AM</strong> — catch coast-road sunrise</li>
+        <li>Breakfast: Hubballi (2.5 h). Try Davangere benne dosa at lunch.</li>
+        <li>Target: arrive Bengaluru by 4–5 PM (before outer-ring rush)</li>
+      </ul>
+    </div>
+  </div>
+</article></div></div>
+
+<!-- COSTS -->
+<div class="sec" id="cost"><div class="ctn">
+  <div class="sec-hd"><h2>Total cost — 2 people</h2><div class="bar"></div></div>
+  <div class="tw"><table>
+    <thead><tr><th>Item</th><th class="r">Cost (₹)</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td>Fuel</td><td class="r">~9,000</td><td>~1,350 km · 15 km/l · ₹100/l</td></tr>
+      <tr><td>Stays (6 nights)</td><td class="r">27,000–35,000</td><td>Homestays, resort, beach</td></tr>
+      <tr><td>Food</td><td class="r">9,000–12,000</td><td>₹1,500–2,000/day</td></tr>
+      <tr><td>Activities</td><td class="r">3,000–6,000</td><td>Water sports, train, entries</td></tr>
+      <tr><td>Tolls</td><td class="r">~1,800</td><td>Expressway + NH48</td></tr>
+      <tr><td>Misc</td><td class="r">2,000</td><td>Parking, shopping, tips</td></tr>
+    </tbody>
+  </table></div>
+  <div class="cost-grid">
+    <div class="cc"><div class="t">Budget</div><div class="p">₹50,000</div><div class="d">Basic stays, roadside food</div></div>
+    <div class="cc f"><div class="t">Comfort ★</div><div class="p">₹65,000</div><div class="d">Good food, all activities</div></div>
+    <div class="cc"><div class="t">Luxury</div><div class="p">₹1,00,000+</div><div class="d">Premium resorts, private tours</div></div>
+  </div>
+</div></div>
+
+<!-- TIPS -->
+<div class="sec" id="tips"><div class="ctn">
+  <div class="sec-hd"><h2>Practical tips</h2><div class="bar"></div></div>
+  <div class="tg">
+    <div class="tb"><h4>🗓️ Best time</h4><ul><li><strong>Oct–Mar:</strong> ideal (cool hills, dry coast)</li><li>Sep–Oct: waterfalls peak; ghat fog</li><li>Apr–May: hot plains, pleasant hills</li><li>Avoid Jun–Aug (heavy ghat rain)</li></ul></div>
+    <div class="tb"><h4>🚗 Self-drive checklist</h4><ul><li>DL, RC, insurance, FASTag</li><li>Spare tyre (checked!), jack, toolkit</li><li><strong>Offline Google Maps</strong> — no signal in forests</li><li>Dashcam · phone mount · car charger</li></ul></div>
+    <div class="tb"><h4>⚠️ Road rules</h4><ul><li>Bandipur: <strong>night ban 9 PM–6 AM</strong></li><li>Expressway: speed cameras (100/120)</li><li>TN entry: green tax ₹150–300</li><li>Wildlife: no honking, 30 km/h</li></ul></div>
+    <div class="tb"><h4>🎒 Packing</h4><ul><li>Fleece (hills: 8–12 °C nights)</li><li>Rain jacket (ghats year-round)</li><li>Walking shoes (trek + estates)</li><li>Swimwear + quick-dry towel</li><li>Modest temple clothing</li></ul></div>
+  </div>
+</div></div>
+
+<!-- ALT -->
+<div class="sec"><div class="ctn">
+  <div class="sec-hd"><h2>Counter-clockwise alternative</h2><div class="bar"></div><p>If the 580 km Day 5 is a dealbreaker, flip the order.</p></div>
+  <div class="alt">
+    <h3>The "easy finish" version</h3>
+    <div class="rb">Bengaluru → Coorg (2N) → Gokarna (2N) → Ooty (2N) → Bengaluru</div>
+    <ul style="padding-left:18px;font-size:.88rem;margin-top:10px">
+      <li><strong>Coorg → Gokarna:</strong> ~350 km / 6–7 h (much shorter)</li>
+      <li><strong>Gokarna → Ooty:</strong> ~580 km (same long day, but you're rested after 2 beach days)</li>
+      <li><strong>Ooty → Bengaluru:</strong> ~270 km / 5 h via Bandipur & Mysuru (<em>easiest drive home!</em>)</li>
+    </ul>
+    <p style="font-size:.88rem;margin-top:10px">This ends with the <em>shortest</em> leg home. You arrive fresh.</p>
+  </div>
+</div></div>
 </main>
 
-<!-- ═══════════════════ FOOTER ═══════════════════ -->
 <footer>
-  <div class="container">
-    <p><strong>Sources:</strong> Rome2Rio · Wanderlog · Trawell.in · Karnataka Tourism · gokarnatourism.co.in</p>
-    <p>Photos: Wikimedia Commons (CC-BY-SA / Public Domain) · Distances are approximate</p>
-    <p style="margin-top:12px;opacity:.6">Always verify Bandipur night-ban timing, safari slots & toy train availability before travel.</p>
-    <p style="margin-top:8px;opacity:.5">Last updated: June 2026</p>
+  <div class="ctn">
+    <p><strong>Sources:</strong> Rome2Rio · Wanderlog · Team-BHP road reports (Oct–Dec 2025) · News18/Indian Express (toll rates Apr 2026) · OotyTourism.co.in (NMR timings) · Karnataka Tourism · gokarnatourism.co.in · Outlook Traveller (trek guide) · travel2ooty.com</p>
+    <p>Photos: Wikimedia Commons (CC-BY-SA / Public Domain) · Distances approximate · Prices indicative (Jun 2026)</p>
+    <p style="margin-top:8px;opacity:.5">Verify Bandipur night-ban, safari slots & train bookings before travel.</p>
   </div>
 </footer>
-
 </body>
 </html>
